@@ -85,11 +85,11 @@ ul {
 	background-color: blanchedalmond;
 }
 
-.echec {
-	animation: echec 0.3s ease-in-out;
+.fail {
+	animation: fail 0.3s ease-in-out;
 }
 
-@keyframes echec {
+@keyframes fail {
 	0% {
 		transform: translateX(0px);
 	}
