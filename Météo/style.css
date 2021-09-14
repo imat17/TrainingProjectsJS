@@ -1,0 +1,86 @@
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #f1f1f1;
+	background: linear-gradient(45deg, rgb(59, 50, 50), rgb(22, 28, 29));
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	background: #4da0b0;
+	background: -webkit-linear-gradient(to right, #d39d38, #4da0b0);
+	background: linear-gradient(to right, #d39d38, #4da0b0);
+	width: 800px;
+	height: 600px;
+	display: grid;
+	grid-template-rows: 1fr 5fr 1fr 1fr;
+	position: relative;
+}
+
+.weather__header {
+	text-align: center;
+	padding: 1rem;
+	border-bottom: 1px solid white;
+}
+
+.weather__main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.weather__img {
+	display: flex;
+}
+
+.weather__info {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.weather__text {
+	font-size: 2.2rem;
+	text-transform: capitalize;
+}
+
+.weather__temp {
+	font-size: 2.5rem;
+}
+
+.weather__loc {
+	font-size: 2.2rem;
+}
+
+.weather__dataone {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+}
+
+.weather__datatwo {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+}
+
+.weather__bloc,
+.weather__bloctwo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-top: 1px solid white;
+}
+
+.weather__bloc:not(:last-child),
+.weather__bloctwo:not(:last-child) {
+	border-right: 1px solid white;
+}
