@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz JS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <h1 class="global__title">Quizz de culture générale !</h1>
+    <div class="global__container">
+        <form class="questions__container">
+
+            <div class="questions__bloc">
+                
+                    <h3 class="questions__question">En quelle année France Gall est-elle décédée ?</h3>
+                    <ul class="questions__france">
+                        <li>
+                            <input type="radio" class="2018" name="france" value="2018" checked>
+                            <label for="2018">2018</label>
+                        </li>
+
+                        <li>
+                            <input type="radio" class="2021" name="france" value="2021">
+                            <label for="2021">2021</label>
+                        </li>
+
+                        <li> 
+                            <input type="radio" class="2003" name="france" value="2003">
+                            <label for="2018">2003</label>
+                        </li>
+                    </ul>
+                
+            </div>
+        
+            <div class="questions__bloc">
+                
+                    <h3 class="questions__question">Combien d'habitants peuplent la Chine ?</h3>
+                    <ul class="questions__chine">
+
+                        <li>   
+                            <input type="radio" class="1.82" name="chine" value="1.82" checked>
+                            <label for="1.82">1.82 Milliard</label> 
+                        </li>
+
+                        <li>   
+                            <input type="radio" class="0.7" name="chine" value="0.7">
+                            <label for="0.7">700 Millions</label>
+                        </li>
+
+                        <li>
+                            <input type="radio" class="1.38" name="chine" value="1.38">
+                            <label for="1.38">1.38 Milliard</label>
+                        </li>
+                    </ul>
+
+                
+            </div>
+
+            <div class="questions__bloc">
+                
+                    <h3 class="questions__question">Quel est le language informatique le plus populaire ?</h3>
+                    <ul class="questions__language">
+                        <li>
+                            <input type="radio" class="Python" name="language" value="Python" checked>
+                            <label for="Python">Python</label>
+                        </li>
+
+                        <li>
+                            <input type="radio" class="JavaScript" name="language" value="JavaScript">
+                            <label for="JavaScript">JavaScript</label>
+                        </li>
+
+                        <li>
+                            <input type="radio" class="Java" name="language" value="Java">
+                            <label for="Java">Java</label>
+                        </li>
+
+                    </ul>
+                
+            </div>
+
+            <div class="questions__bloc">
+                
+                    <h3 class="questions__question">Quelle est la date de sortie de Modern Warfare 2 ?</h3>
+                    <ul class="questions__cod">
+                        <li>
+                            <input type="radio" class="2012" name="cod" value="2012" checked>
+                            <label for="2012">2012</label>
+                        </li>
+
+                        <li>
+                            <input type="radio" class="2007" name="cod" value="2007">
+                            <label for="2007">2007</label>
+                        </li>
+
+                        <li>
+                            <input type="radio" class="2009" name="cod" value="2009">
+                            <label for="2009">2009</label>
+                        </li>
+                    </ul>
+
+                
+            </div>
+
+            <div class="questions__bloc">
+                
+                    <h3 class="questions__question">Donald Trump était le Président de quel pays ?</h3>
+                    <ul class="questions__donald">
+                        <li>
+                            <input type="radio" class="Corée du Nord" name="donald" value="Corée du Nord" checked>
+                            <label for="Corée du Nord">Corée du Nord</label>
+                        </li>
+
+                        <li>
+                            <input type="radio" class="Chine" name="donald" value="Chine">
+                            <label for="Chine">Chine</label>
+                        </li>
+
+                        <li>
+                            <input type="radio" class="Etats-Unis" name="donald" value="Etats-Unis">
+                            <label for="Etats-Unis">Etats-Unis</label>
+                        </li>
+
+                    </ul>
+                
+            </div>
+
+
+            <button class="btn" type="submit">Validez vos choix !</button>
+
+        </form>
+
+        <div class="results">
+            <h3>Cliquez sur valider pour voirs vos résultats</h3>
+            <p class="results__help"></p>
+            <p class="results__note"></p>
+        </div>
+        
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
