@@ -8,13 +8,18 @@
 </head>
 <body>
     <div class="container">
+
+        <div class="loader">
+            <img src="ressources/chargement/circles.svg" alt="loader icon">
+        </div>
+
         <div class="weather__header">
             <h1>Ma météo</h1>
         </div>
 
         <div class="weather__main">
             <div class="weather__img">
-                <img src="./ressources/jour/01d.svg"/>
+                <img class="weather__icon" alt="icone méteo" src="./ressources/jour/01d.svg"/>
             </div>
             <div class="weather__info">
                 <p class="weather__text"></p>
@@ -99,7 +104,8 @@
         </div>
     </div>
  
-   
+    
     <script type="module" src="scripts/main.js"></script>
+
 </body>
 </html>

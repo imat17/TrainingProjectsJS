@@ -84,3 +84,26 @@ body {
 .weather__bloctwo:not(:last-child) {
 	border-right: 1px solid white;
 }
+
+/* Animation Loader */
+
+.loader {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg, rgb(59, 50, 50), rgb(22, 28, 29));
+	transition: opacity 1.5s ease-out;
+	z-index: 1000;
+}
+
+.loader img {
+	width: 10rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.hidden {
+	opacity: 0;
+}
