@@ -2,6 +2,7 @@ const searchInput = document.querySelector('.poke__search input');
 let allPoke = [];
 let lastArray = [];
 const poke__list = document.querySelector('.poke__list');
+const loader = document.querySelector('.center-on-page');
 
 const types = {
 	grass: '#78c850',
@@ -73,6 +74,7 @@ function fetchFullPoke(pokemon) {
 							.slice(0, 21); //On prend les 21° pour les cards
 						console.log(lastArray);
 						createCard(lastArray);
+						loader.style.display = 'none';
 					}
 				});
 		});
@@ -123,6 +125,37 @@ function addPoke(nb) {
 	index += nb;
 }
 
+// Recherche
+searchInput.addEventListener('keyup', research);
+
+// si usage du bouton
+/*const formResearch = document.querySelector('.poke__search');
+formResearch.addEventListener('submit', (e) => {
+	e.preventDefault();
+	return research;
+}); */
+
+function research() {
+	if (index < 151) {
+		addPoke(130); //21 +130 = 151
+	}
+
+	let filter, allLi, titleValue, allTitles; //On déclare avant car utilisation juste après
+	filter = searchInput.value.toUpperCase(); // Evite les bugs de recherche
+	allLi = document.querySelectorAll('li');
+	allTitles = document.querySelectorAll('li > h5');
+
+	// Système de recherche
+	for (i = 0; i < allLi.length; i++) {
+		titleValue = allTitles[i].innerText; //TitleValue = Nom du 1er Poké qui passe dans la boucle
+
+		if (titleValue.toUpperCase().indexOf(filter) > -1) {
+			allLi[i].style.display = 'flex';
+		} else {
+			allLi[i].style.display = 'none';
+		}
+	}
+}
 // Animation Input
 searchInput.addEventListener('input', function (e) {
 	if (e.target.value !== '') {
