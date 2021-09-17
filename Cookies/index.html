@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies en JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1 class="cookie__title">🍪 The Cookies Creator 🍪</h1>
+
+        <input type="text" id="cookie__text" name="cookieName">
+        <input type="text" id="cookie__about" name="cookieValue">
+        <input type="date" id="cookie__date" name="cookieExpire">
+        
+        <div class="cookie__button">
+            <button class="cookie__btn1" data-cookie="create">Créer</button>
+            <button class="cookie__btn2" data-cookie="show">Afficher</button>
+        </div>
+        
+        <p class="cookie__info"></p>
+
+        <ul class="cookie__show"></ul>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

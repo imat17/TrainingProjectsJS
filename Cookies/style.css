@@ -1,0 +1,54 @@
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+}
+
+
+.cookie__title {
+	justify-content: center;
+	display: flex;
+	width: 100%;
+	font-size: 3.5rem;
+	padding: 3rem;
+}
+
+input {
+	display: block;
+	margin: 1rem auto;
+	padding: 1rem;
+	font-size: 1.3rem;
+	width: 75%;
+}
+
+.cookie__button {
+	display: flex;
+	justify-content: center;
+	padding: 1rem;
+}
+
+button {
+	margin: 1rem;
+	padding: 0.5rem;
+	width: 10%;
+	font-size: 1.3rem;
+}
+
+p {
+	margin-left: 15rem;
+}
+
+.visible {
+	display: visible;
+}
+
+.hidden {
+	display: none;
+}
