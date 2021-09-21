@@ -1,0 +1,79 @@
+*, ::before, ::after  {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.form__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input__search {
+    width: 30%;
+    padding: 1rem;
+    border: none;
+    border-radius: .8rem;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    margin: 6rem auto;
+    width: 25rem;
+    height: 19rem;
+    border-radius: .5rem;
+}
+
+.card {
+    height: auto;
+    position: relative;
+    width: 20rem;
+}
+
+.avatar {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.contain__info {
+    border-top: 1px dashed #000;
+    margin-top: 3rem;
+    list-style-type: none;
+}
+
+li {
+    padding: .3rem .6rem;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+li:nth-child(1) {
+    margin-top: .8rem;
+}
