@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container__slider">
+        <div class="img__slider">
+            <img src="imgs/img1.jpg" alt="img1" class="active" >
+            <img src="imgs/img2.jpg" alt="img2" >
+            <img src="imgs/img3.jpg" alt="img3" >
+        </div>
+        <div class="commands__slider">
+            <button class="left">
+                <img src="imgs/left.svg" alt="left">
+            </button>
+            <button class="right">
+                <img src="imgs/right.svg" alt="right">
+            </button>
+        </div>
+        <div class="circles__slider">
+            <button data-clic="1" class="circle active__circle"></button>
+            <button data-clic="2" class="circle"></button>
+            <button data-clic="3" class="circle"></button>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
