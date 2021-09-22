@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="container__btn">
+        <button class="btn__register">S'inscrire</button>
+        <button class="btn__connect">Se connecter</button>
+        <button class="btn__logout">Se déconnecter</button>
+    </div>
+
+    <h1>Inscrivez-vous ou connectez-vous pour accéder au contenu.</h1>
+    <p class="info">Contenu public</p>
+
+    <div class="form__container">
+
+        <form class="form__register">
+
+            <h2>Inscription</h2>
+            <label for="email__register">Entrez un email</label>
+            <input type="email" class="email__register" id="emailregister">
+
+            <label for="password__register">Entrez un mot de passe</label>
+            <input type="password" class="password__register" id="passwordregister">
+
+            <button type="submit">S'inscrire</button>
+        </form>
+
+        <form class="form__connect">
+
+            <h2>Connection</h2>
+            <label for="email__connect">Entrez un email</label>
+            <input type="email" class="email__connect" id="emailconnect">
+
+            <label for="password__connect">Entrez un mot de passe</label>
+            <input type="password" class="password__connect" id="paswordconnect">
+
+            <button type="submit">Se connecter</button>
+        </form>
+
+        </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyA5mgNdKnyAuuPslG7O3kJrBebvQojLak4",
+        authDomain: "authentificationjs-ce73a.firebaseapp.com",
+        projectId: "authentificationjs-ce73a",
+        storageBucket: "authentificationjs-ce73a.appspot.com",
+        messagingSenderId: "1031538252961",
+        appId: "1:1031538252961:web:b508cdbf8099e94064e4e0"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    const auth = firebase.auth();
+    const db = firebase.firestore();       
+    
+    </script>    
+
+    <script src="app.js"></script>
+
+</body>
+</html>

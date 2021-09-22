@@ -1,0 +1,66 @@
+*, ::before, ::after  {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container__btn {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    width: 100%;
+}
+
+button {
+    padding: .7rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    margin: 4rem;
+}
+
+.info {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.form__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.form__register, .form__connect {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+    background: gray;
+    position: absolute;
+    top: 20%;
+}
+
+input {
+    width: 90%;
+    margin: .5rem;
+    padding: .5rem;
+    outline: none;
+}
+
+label {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+.appear {
+    display: flex;
+}
