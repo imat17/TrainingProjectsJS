@@ -1,0 +1,51 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #1488cc, #2b32b2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin: 1rem;
+    font-size: 3rem;
+}
+
+.container {
+    background: #f1f1f1;
+    margin: 100px auto 0;
+    border-radius: .5rem;
+    padding: 2rem .5rem .5rem;
+    max-width: 90%;
+    color: #333;
+}
+
+.sentence__towrote {
+    margin: 1rem 2rem;
+    font-size: 1.4rem;
+}
+
+.sentence__text {
+    background: transparent;
+    border: 2px solid #333;
+    font-size: 1.5rem;
+    color: #333;
+    resize: none;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.correct {
+    color: green;
+}
+
+.wrong {
+    color: red;
+    text-decoration: underline;
+}
+    
